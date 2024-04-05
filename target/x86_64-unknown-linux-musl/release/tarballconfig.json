@@ -1,0 +1,6 @@
+{
+	"fileUris": [
+		"https://storagexxxxxx.blob.core.windows.net/avml/avml.tar.gz?sp=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+	],
+	"commandToExecute": "tar xvf ./avml.tar.gz -C /tmp && cd /tmp/avmlbin/ && bash ./runavml.sh"
+}

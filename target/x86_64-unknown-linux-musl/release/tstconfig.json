@@ -1,0 +1,6 @@
+{
+	"fileUris": [
+		"https://storagebglablin.blob.core.windows.net/avml/avml.tar.gz?sp=r&st=2024-04-04T01:43:38Z&se=2024-04-06T09:43:38Z&spr=https&sv=2022-11-02&sr=b&sig=m97ie6wfbkissTPEpr9xSsMCJVx9oiiL0YBB0ig54gk%3D"
+	],
+	"commandToExecute": "tar xvf ./avml.tar.gz -C /tmp && cd /tmp/avmlbin/ && bash ./runavml.sh"
+}

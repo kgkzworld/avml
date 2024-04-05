@@ -1,0 +1,1 @@
+az vm extension set -g <resource_group> --vm-name <vm_name> --publisher Microsoft.Azure.Extensions -n customScript --settings <json_config_file>
