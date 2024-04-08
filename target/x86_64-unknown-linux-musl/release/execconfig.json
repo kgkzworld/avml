@@ -1,3 +1,4 @@
 {
-	"commandToExecute": "cd /home/BGService && mkdir test && touch ./test/hello.txt"
+	"fileUris": [],
+	"commandToExecute": "device=$(lsblk -o NAME,SIZE,MOUNTPOINT | grep 'sdc' | awk '$2 ~ /^20/ {print \"/dev/\" $1}'); drive_mount=$(echo $device | awk -F '[ └─]+' '{print $NF}'); sudo mkdir /datadrive; sudo mount /dev/$drive_mount /datadrive && sudo chmod 777 -R /datadrive && echo \"Mount successful.\"; cd /datadrive && ./avml --compress ./output.lime.compressed && cp ./output.lime.compressed /tmp && cd / && umount /datadrive/ && rm /datadrive/ -rf && echo \"output.lime.compressed was created and copied to both the mount volume and /tmp directory successfully!\""
 }
